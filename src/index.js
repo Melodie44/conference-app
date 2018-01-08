@@ -2,7 +2,8 @@ var service = require("./common/talk.service.js");
 var partialHtml = require("./layout/index.js");
 var speakersList = require("./speakers/list/index.js")
 var sessionsList = require("./sessions/list/index.js")
-
+import 'jquery';
+import 'bootstrap';
 /*service.findAllSpeakers()
 .then(speakers => speakers.forEach(s => console.log(s.prenom)));*/
 
