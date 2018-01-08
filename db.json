@@ -1,0 +1,10 @@
+{
+    "speakers": [
+      { "id": 1, "prenom": "Toto" },
+      { "id": 2, "prenom": "Georges" }
+    ],
+    "sessions": [
+        { "id": 1, "nom": "Toto" },
+        { "id": 2, "nom": "Georges" }
+      ]
+  }

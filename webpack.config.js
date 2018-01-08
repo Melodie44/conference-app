@@ -6,10 +6,14 @@ module.exports = {
     // il est possible de définir plusieurs points d'entrée
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: "bundle.js"
+        path: path.resolve(__dirname, 'dist'),
+        filename: "dist.js"
     },
     plugins: [
         new HtmlWebpackPlugin()
-    ]
+    ],
+    module: {
+        rules: 
+          { test: /\.html$/, use: 'html-loader' }
+    }
 }

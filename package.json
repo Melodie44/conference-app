@@ -5,13 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server"
+    "build": "webpack",
+    "serve": "webpack-dev-server",
+    "dist": "webpack",
+    "json-server": "json-server --watch db.json",
+    "start": "npm-run-all --parallel json-server serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-loader": "^0.5.4",
     "html-webpack-plugin": "^2.30.1",
-    "webpack": "^3.10.0"
+    "npm-run-all": "^4.1.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
   }
 }
