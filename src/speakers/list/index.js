@@ -1,8 +1,8 @@
 var service = require("../../common/talk.service.js");
 
-class SpeakerList{
+export class SpeakerList{
 
-    static render(idView){
+    render(idView){
         console.log(idView);
         service.findAllSpeakers()
         .then(speakers => {
@@ -14,4 +14,3 @@ class SpeakerList{
         });
     }
 }
-exports.SpeakerList = SpeakerList;

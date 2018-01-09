@@ -13,7 +13,8 @@ module.exports = {
         new HtmlWebpackPlugin()
     ],
     module: {
-        rules: 
+        rules: [
           { test: /\.html$/, use: 'html-loader' }
+          ]
     }
 }

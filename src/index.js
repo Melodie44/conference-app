@@ -1,15 +1,23 @@
+/*import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';*/
+
 var service = require("./common/talk.service.js");
 var partialHtml = require("./layout/index.js");
 var speakersList = require("./speakers/list/index.js")
 var sessionsList = require("./sessions/list/index.js")
-import 'jquery';
-import 'bootstrap';
+import { Layout } from './layout';
+import { SpeakerList } from './speakers/list';
+import { SessionList } from './sessions/list';
+
+const layout = new Layout();
+
 /*service.findAllSpeakers()
 .then(speakers => speakers.forEach(s => console.log(s.prenom)));*/
 
-partialHtml.Layout.render();
+layout.render();
 
-speakersList.SpeakerList.render("main-view");
+/*speakersList.SpeakerList.render("main-view");
 
 var router = () => {
     if (location.hash == '#speakers-list') {
@@ -27,5 +35,5 @@ window.addEventListener('load', () => {
         router();
     };
     router();
-});
+});*/
 
